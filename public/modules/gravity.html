@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gravity Playground</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body>
+        <main class="container">
+            <header class="header">
+                <h1>Gravity Playground</h1>
+                <p>Pick a world and see how your weight changes.</p>
+            </header>
+
+            <section class="card">
+
+                <div class="planet-visual">
+                    <div class="planet-icon" id="planetIcon" aria-hidden="true">🌍</div>
+                    <div class="planet-meta">
+                        <div class="planet-name" id="planetName">Earth</div>
+                        <div class="planet-desc" id="planetDesc">Our home world</div>
+                    </div>
+                </div>
+
+                <label for="weight">Your weight on Earth (kg):</label>
+                <input id="weight" type="number" min="1" placeholder="e.g. 80" />
+
+                <label for="world">Choose a world:</label>
+                <select id="world">
+                    <option value="Earth">Earth</option>
+                    <option value="Moon">Moon</option>
+                    <option value="Mars">Mars</option>
+                    <option value="Venus">Venus</option>
+                    <option value="Jupiter">Jupiter</option>
+                </select>
+
+                <button id="calcBtn">Apply gravity</button>
+
+                <div class="result" id="result">
+                    Enter your weight and choose a world.
+                </div>
+
+                <div class="fact" id="fact">
+                    Did you know facts will appear here.
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Quick explanation</h2>
+                <p>
+                    Your <strong>mass</strong> stays the same everywhere.
+                    Your <strong>weight</strong> changes because gravity is different on each world.
+                </p>
+            </section>
+        </main>
+
+        <script src="../js/gravity.js"></script>
+    </body>
+</html>
