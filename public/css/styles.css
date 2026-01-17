@@ -169,6 +169,21 @@ body::after {
   }
 }
 
+.home-button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .container {
   max-width: 720px;
   margin: 0 auto;

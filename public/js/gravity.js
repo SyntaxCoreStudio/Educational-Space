@@ -9,6 +9,20 @@ const planetDesc = document.getElementById("planetDesc");
 const planetName = document.getElementById("planetName");
 
 const worlds = {
+  Mercury: {
+    ratio: 0.38,
+    icon: "☿️",
+    img: "../assets/planets/mercury.jpg",
+    desc: "A small rocky world, heavily cratered like the Moon.",
+    fact: "Mercury is hard to spot because it never gets far from the Sun in the sky, so it's only seen briefly near sunrise or sunset.",
+  },
+  Venus: {
+    ratio: 0.91,
+    icon: "🟠",
+    img: "../assets/planets/venus.jpg",
+    desc: "Hot, cloudy, and very hostile.",
+    fact: "A day on Venus is longer than its year. It rotates extremely slowly.",
+  },
   Earth: {
     ratio: 1,
     icon: "🌍",
@@ -30,19 +44,12 @@ const worlds = {
     desc: "The red planet, cold and dusty.",
     fact: "Mars has the tallest volcano in the solar system: Olympus Mons.",
   },
-  Venus: {
-    ratio: 0.91,
-    icon: "🟠",
-    img: "../assets/planets/venus.jpg",
-    desc: "Hot, cloudy, and very hostile.",
-    fact: "A day on Venus is longer than its years. It rotates extremely slowly.",
-  },
   Jupiter: {
     ratio: 2.34,
     icon: "🟤",
     img: "../assets/planets/jupiter.jpg",
     desc: "A gas giant with massive storms.",
-    fact: "Jupiter is a gas giant. You would not stand on a solid surface like you would Earth.",
+    fact: "Jupiter has no solid surface you can stand on. The gravity value is measured at the cloud tops.",
   },
   Saturn: {
     ratio: 1.08,
@@ -50,6 +57,20 @@ const worlds = {
     img: "../assets/planets/saturn.jpg",
     desc: "A gas giant with an average radius about 9 times that of Earth",
     fact: "Saturn is only slightly smaller than Jupiter in size, but has just about 30% of Jupiter's mass. Like Jupiter, it has no solid surface.",
+  },
+  Uranus: {
+    ratio: 0.89,
+    icon: "⛢",
+    img: "../assets/planets/uranus.jpg",
+    desc: "An ice giant with a blue-green color from methane in its atmosphere.",
+    fact: "Uranus spins on its side, with an extreme tilt of about 98°, giving it unusual seasons.",
+  },
+  Neptune: {
+    ratio: 1.14,
+    icon: "♆",
+    img: "../assets/planets/neptune.jpg",
+    desc: "A distant ice giant, deep blue and very cold.",
+    fact: "Neptune's winds are some of the fastest in the solar system, and its gravity is slightly stronger than Earth's.",
   },
 };
 

@@ -10,6 +10,10 @@
   <body>
     <div class="starfield"></div>
 
+    <div class="home">
+      <a class="home-button" href="../modules/index.html">Home</a>
+    </div>
+
     <main class="container">
       <header class="header">
         <h1>Gravity Playground</h1>
@@ -39,12 +43,15 @@
 
         <label for="world">Choose a world:</label>
         <select id="world">
+          <option value="Mercury">Mercury</option>
+          <option value="Venus">Venus</option>
           <option value="Earth">Earth</option>
           <option value="Moon">Moon</option>
           <option value="Mars">Mars</option>
-          <option value="Venus">Venus</option>
           <option value="Jupiter">Jupiter</option>
           <option value="Saturn">Saturn</option>
+          <option value="Uranus">Uranus</option>
+          <option value="Neptune">Neptune</option>
         </select>
 
         <button id="calcBtn">Apply gravity</button>
