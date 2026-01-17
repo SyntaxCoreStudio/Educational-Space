@@ -159,19 +159,11 @@ body::after {
   opacity: 0.15;
 }
 
-@keyframes starsDrift {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(240px);
-  }
-}
-
 @keyframes starsScroll {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 0 400px;
   }
@@ -248,17 +240,38 @@ button {
   border-radius: 999px;
   display: grid;
   place-items: center;
-  font-size: 30px;
   background: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
   animation: floaty 3.5s ease-in-out infinite;
   box-shadow: 0 0 18px rgba(255, 255, 255, 0.12);
+}
+
+.planet-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#planetIconFallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.planet-icon {
+  position: relative;
 }
 
 @keyframes floaty {
   0%,
   100% {
-    transform: translateY(9);
+    transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-6px);
   }

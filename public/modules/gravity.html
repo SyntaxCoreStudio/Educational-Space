@@ -6,6 +6,7 @@
     <title>Gravity Playground</title>
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
+
   <body>
     <div class="starfield"></div>
 
@@ -17,7 +18,16 @@
 
       <section class="card">
         <div class="planet-visual">
-          <div class="planet-icon" id="planetIcon" aria-hidden="true">🌍</div>
+          <div class="planet-icon" aria-hidden="true">
+            <img
+              id="planetImg"
+              src="../assets/planets/earth.jpg"
+              alt=""
+              loading="eager"
+              decoding="async"
+            />
+            <span id="planetIconFallback">🌍</span>
+          </div>
           <div class="planet-meta">
             <div class="planet-name" id="planetName">Earth</div>
             <div class="planet-desc" id="planetDesc">Our home world</div>
@@ -34,6 +44,7 @@
           <option value="Mars">Mars</option>
           <option value="Venus">Venus</option>
           <option value="Jupiter">Jupiter</option>
+          <option value="Saturn">Saturn</option>
         </select>
 
         <button id="calcBtn">Apply gravity</button>
