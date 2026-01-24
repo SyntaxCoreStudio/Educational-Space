@@ -337,6 +337,58 @@ nav a:hover {
   color: #00d4ff;
 }
 
+nav ul li {
+  position: relative;
+}
+
+/* Keep the dropdown hidden by default */
+nav ul li .dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;          /* IMPORTANT: no gap */
+  left: 0;
+
+  min-width: 220px;
+  padding: 10px 0;
+  margin: 0;
+
+  background: #1a1f3a;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+
+  display: none;
+  z-index: 999;
+}
+
+/* Invisible hover bridge to prevent flicker */
+nav ul li.dropdown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 10px;       /* small buffer area */
+}
+
+/* Show dropdown when hovering parent li OR the dropdown itself */
+nav ul li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+nav ul li .dropdown-menu a {
+  display: block;
+  padding: 10px 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li .dropdown-menu a:hover {
+  background: rgba(0, 212, 255, 0.12);
+  color: #00d4ff;
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -415,3 +467,4 @@ footer {
   margin-top: 4rem;
   border-top: 1px solid #333;
 }
+

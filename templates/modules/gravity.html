@@ -1,22 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gravity Playground</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
+{% extends "base.html" %}
 
-  <body>
-    <div class="starfield"></div>
+{% block title %}Gravity{% endblock %}
 
-    <nav>
-      <ul>
-        <li><a href="../modules/index.html">Home</a></li>
-        <li><a href="../modules/gravity.html">Modules</a></li>
-        <li><a href="#activities">Activities</a></li>
-      </ul>
-    </nav>
+{% block content %}
 
     <main class="container">
       <header class="header">
@@ -77,6 +63,7 @@
       </section>
     </main>
 
-    <script src="../js/gravity.js"></script>
+    {% endblock %}
+
   </body>
 </html>

@@ -1,21 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Educational Space</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body>
-    <div class="starfield"></div>
+{% extends "base.html" %}
 
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="../modules/gravity.html">Modules</a></li>
-        <li><a href="#activities">Activities</a></li>
-      </ul>
-    </nav>
+{% block title %}Home{% endblock %}
+
+{% block content %}
 
     <div class="container">
       <section class="hero">
@@ -70,8 +57,7 @@
       </section>
     </div>
 
-    <footer>
-      <p>&copy; 2026 Educational Space. More content coming soon!</p>
-    </footer>
+    {% endblock %}
+    
   </body>
 </html>
